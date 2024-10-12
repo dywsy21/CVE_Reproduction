@@ -1,0 +1,2496 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      The system is: Linux - 5.15.153.1-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-eHNpZx"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-eHNpZx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-eHNpZx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f8021/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f8021.dir/build.make CMakeFiles/cmTC_f8021.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-eHNpZx'
+        Building C object CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f8021.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f8021.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwPXqyV.s
+        GNU C17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 35e51c4ef55ea8f6b448d85f0fac5984
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f8021.dir/'
+         as -v --64 -o CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o /tmp/ccwPXqyV.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_f8021
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8021.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o -o cmTC_f8021 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f8021' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f8021.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cceufxLa.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f8021 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f8021' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f8021.'
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-eHNpZx'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:54 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-eHNpZx']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f8021/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_f8021.dir/build.make CMakeFiles/cmTC_f8021.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-eHNpZx']
+        ignore line: [Building C object CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f8021.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f8021.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwPXqyV.s]
+        ignore line: [GNU C17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 35e51c4ef55ea8f6b448d85f0fac5984]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f8021.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o /tmp/ccwPXqyV.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_f8021]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8021.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o -o cmTC_f8021 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f8021' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f8021.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cceufxLa.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f8021 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cceufxLa.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f8021] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_f8021.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "build/cmake/modules/Sanitizers.cmake:11 (check_c_compiler_flag)"
+      - "CMakeLists.txt:80 (include)"
+    checks:
+      - "Performing Test JAS_HAVE_FSANITIZE_LEAK"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-SxpZWp"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-SxpZWp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+    buildResult:
+      variable: "JAS_HAVE_FSANITIZE_LEAK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-SxpZWp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fb689/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fb689.dir/build.make CMakeFiles/cmTC_fb689.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-SxpZWp'
+        Building C object CMakeFiles/cmTC_fb689.dir/src.c.o
+        /usr/bin/cc -DJAS_HAVE_FSANITIZE_LEAK  -fsanitize=leak -o CMakeFiles/cmTC_fb689.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-SxpZWp/src.c
+        Linking C executable cmTC_fb689
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb689.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fb689.dir/src.c.o -o cmTC_fb689 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-SxpZWp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "build/cmake/modules/Sanitizers.cmake:21 (check_c_compiler_flag)"
+      - "CMakeLists.txt:80 (include)"
+    checks:
+      - "Performing Test JAS_HAVE_FSANITIZE_UNDEFINED"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Ic3f8k"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Ic3f8k"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+    buildResult:
+      variable: "JAS_HAVE_FSANITIZE_UNDEFINED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Ic3f8k'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_13e4f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_13e4f.dir/build.make CMakeFiles/cmTC_13e4f.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Ic3f8k'
+        Building C object CMakeFiles/cmTC_13e4f.dir/src.c.o
+        /usr/bin/cc -DJAS_HAVE_FSANITIZE_UNDEFINED  -fsanitize=undefined -o CMakeFiles/cmTC_13e4f.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Ic3f8k/src.c
+        Linking C executable cmTC_13e4f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13e4f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_13e4f.dir/src.c.o -o cmTC_13e4f 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Ic3f8k'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "build/cmake/modules/Sanitizers.cmake:23 (check_c_compiler_flag)"
+      - "CMakeLists.txt:80 (include)"
+    checks:
+      - "Performing Test JAS_HAVE_MSVC_FSANITIZE_ADDRESS"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Lw6S6Q"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Lw6S6Q"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+    buildResult:
+      variable: "JAS_HAVE_MSVC_FSANITIZE_ADDRESS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Lw6S6Q'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7710c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7710c.dir/build.make CMakeFiles/cmTC_7710c.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Lw6S6Q'
+        Building C object CMakeFiles/cmTC_7710c.dir/src.c.o
+        /usr/bin/cc -DJAS_HAVE_MSVC_FSANITIZE_ADDRESS  /fsanitize=address -o CMakeFiles/cmTC_7710c.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Lw6S6Q/src.c
+        cc: warning: /fsanitize=address: linker input file unused because linking not done
+        cc: error: /fsanitize=address: linker input file not found: No such file or directory
+        gmake[1]: *** [CMakeFiles/cmTC_7710c.dir/build.make:78: CMakeFiles/cmTC_7710c.dir/src.c.o] Error 1
+        gmake[1]: *** Deleting file 'CMakeFiles/cmTC_7710c.dir/src.c.o'
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Lw6S6Q'
+        gmake: *** [Makefile:127: cmTC_7710c/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:214 (enable_language)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:214 (enable_language)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-pWSver"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-pWSver"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-pWSver'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_854cd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_854cd.dir/build.make CMakeFiles/cmTC_854cd.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-pWSver'
+        Building CXX object CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -fPIE   -v -o CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_854cd.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_854cd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc6ti3cY.s
+        GNU C++17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 4e0f319cd9945d8f5a9eeeeec1481ba5
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_854cd.dir/'
+         as -v --64 -o CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6ti3cY.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_854cd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_854cd.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_854cd 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_854cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_854cd.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgKn0HD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_854cd /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_854cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_854cd.'
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-pWSver'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:214 (enable_language)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:214 (enable_language)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-pWSver']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_854cd/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_854cd.dir/build.make CMakeFiles/cmTC_854cd.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-pWSver']
+        ignore line: [Building CXX object CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -fPIE   -v -o CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_854cd.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_854cd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc6ti3cY.s]
+        ignore line: [GNU C++17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 4e0f319cd9945d8f5a9eeeeec1481ba5]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_854cd.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6ti3cY.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIE' '-v' '-o' 'CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_854cd]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_854cd.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_854cd ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_854cd' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_854cd.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgKn0HD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_854cd /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccgKn0HD.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_854cd] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_854cd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:317 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test JAS_GCC_WARN_NO_STRINGOP_TRUNCATION"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mNMg0G"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mNMg0G"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_GCC_WARN_NO_STRINGOP_TRUNCATION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mNMg0G'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e9da/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e9da.dir/build.make CMakeFiles/cmTC_9e9da.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mNMg0G'
+        Building C object CMakeFiles/cmTC_9e9da.dir/src.c.o
+        /usr/bin/cc -DJAS_GCC_WARN_NO_STRINGOP_TRUNCATION  -std=gnu11 -fPIE   -Wno-stringop-truncation -o CMakeFiles/cmTC_9e9da.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mNMg0G/src.c
+        Linking C executable cmTC_9e9da
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e9da.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_9e9da.dir/src.c.o -o cmTC_9e9da 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mNMg0G'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:319 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test JAS_GCC_WARN_NO_STRINGOP_OVERFLOW"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VgW6i5"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VgW6i5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_GCC_WARN_NO_STRINGOP_OVERFLOW"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VgW6i5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5486d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5486d.dir/build.make CMakeFiles/cmTC_5486d.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VgW6i5'
+        Building C object CMakeFiles/cmTC_5486d.dir/src.c.o
+        /usr/bin/cc -DJAS_GCC_WARN_NO_STRINGOP_OVERFLOW  -std=gnu11 -fPIE   -Wno-stringop-overflow -o CMakeFiles/cmTC_5486d.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VgW6i5/src.c
+        Linking C executable cmTC_5486d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5486d.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_5486d.dir/src.c.o -o cmTC_5486d 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VgW6i5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:321 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test JAS_CLANG_WARN_NO_OUT_OF_RANGE_COMPARE"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Yti6ki"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Yti6ki"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_CLANG_WARN_NO_OUT_OF_RANGE_COMPARE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Yti6ki'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c389/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8c389.dir/build.make CMakeFiles/cmTC_8c389.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Yti6ki'
+        Building C object CMakeFiles/cmTC_8c389.dir/src.c.o
+        /usr/bin/cc -DJAS_CLANG_WARN_NO_OUT_OF_RANGE_COMPARE  -std=gnu11 -fPIE   -Wno-tautological-constant-out-of-range-compare -o CMakeFiles/cmTC_8c389.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Yti6ki/src.c
+        Linking C executable cmTC_8c389
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c389.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_8c389.dir/src.c.o -o cmTC_8c389 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Yti6ki'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:382 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_FUNCTION_SECTIONS"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cLrcmf"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cLrcmf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_FUNCTION_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cLrcmf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_135c6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_135c6.dir/build.make CMakeFiles/cmTC_135c6.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cLrcmf'
+        Building C object CMakeFiles/cmTC_135c6.dir/src.c.o
+        /usr/bin/cc -DHAVE_FUNCTION_SECTIONS  -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE   -ffunction-sections -o CMakeFiles/cmTC_135c6.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cLrcmf/src.c
+        Linking C executable cmTC_135c6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_135c6.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_135c6.dir/src.c.o -o cmTC_135c6 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cLrcmf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:383 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_DATA_SECTIONS"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cQbRJM"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cQbRJM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DATA_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cQbRJM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_890c2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_890c2.dir/build.make CMakeFiles/cmTC_890c2.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cQbRJM'
+        Building C object CMakeFiles/cmTC_890c2.dir/src.c.o
+        /usr/bin/cc -DHAVE_DATA_SECTIONS  -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE   -fdata-sections -o CMakeFiles/cmTC_890c2.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cQbRJM/src.c
+        Linking C executable cmTC_890c2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_890c2.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_890c2.dir/src.c.o -o cmTC_890c2 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-cQbRJM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:384 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_GC_SECTIONS"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ubvwH5"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ubvwH5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GC_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ubvwH5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_725f1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_725f1.dir/build.make CMakeFiles/cmTC_725f1.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ubvwH5'
+        Building C object CMakeFiles/cmTC_725f1.dir/src.c.o
+        /usr/bin/cc -DHAVE_GC_SECTIONS  -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE   -Wl,--gc-sections -o CMakeFiles/cmTC_725f1.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ubvwH5/src.c
+        Linking C executable cmTC_725f1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_725f1.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_725f1.dir/src.c.o -o cmTC_725f1 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ubvwH5'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build/cmake/modules/JasGetStdcVersion.cmake:13 (try_run)"
+      - "CMakeLists.txt:437 (jas_get_stdc_version)"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "print_stdc_compile_status"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4c5d0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4c5d0.dir/build.make CMakeFiles/cmTC_4c5d0.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_4c5d0.dir/print_stdc.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_4c5d0.dir/print_stdc.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/src/print_stdc.c
+        Linking C executable cmTC_4c5d0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c5d0.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_4c5d0.dir/print_stdc.c.o -o cmTC_4c5d0 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "print_stdc_run_status"
+      cached: true
+      stdout: |
+        201112L
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:446 (check_include_files)"
+    checks:
+      - "Looking for include file fcntl.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-78zLsk"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-78zLsk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-78zLsk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f7649/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f7649.dir/build.make CMakeFiles/cmTC_f7649.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-78zLsk'
+        Building C object CMakeFiles/cmTC_f7649.dir/JAS_HAVE_FCNTL_H.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_f7649.dir/JAS_HAVE_FCNTL_H.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-78zLsk/JAS_HAVE_FCNTL_H.c
+        Linking C executable cmTC_f7649
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7649.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_f7649.dir/JAS_HAVE_FCNTL_H.c.o -o cmTC_f7649 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-78zLsk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:447 (check_include_files)"
+    checks:
+      - "Looking for include file io.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6iPDfp"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6iPDfp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_IO_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6iPDfp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e05a4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e05a4.dir/build.make CMakeFiles/cmTC_e05a4.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6iPDfp'
+        Building C object CMakeFiles/cmTC_e05a4.dir/JAS_HAVE_IO_H.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_e05a4.dir/JAS_HAVE_IO_H.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6iPDfp/JAS_HAVE_IO_H.c
+        /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6iPDfp/JAS_HAVE_IO_H.c:2:10: fatal error: io.h: No such file or directory
+            2 | #include <io.h>
+              |          ^~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_e05a4.dir/build.make:78: CMakeFiles/cmTC_e05a4.dir/JAS_HAVE_IO_H.c.o] Error 1
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6iPDfp'
+        gmake: *** [Makefile:127: cmTC_e05a4/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:448 (check_include_files)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JeBrr8"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JeBrr8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JeBrr8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1a640/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1a640.dir/build.make CMakeFiles/cmTC_1a640.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JeBrr8'
+        Building C object CMakeFiles/cmTC_1a640.dir/JAS_HAVE_UNISTD_H.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_1a640.dir/JAS_HAVE_UNISTD_H.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JeBrr8/JAS_HAVE_UNISTD_H.c
+        Linking C executable cmTC_1a640
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a640.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_1a640.dir/JAS_HAVE_UNISTD_H.c.o -o cmTC_1a640 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JeBrr8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:449 (check_include_files)"
+    checks:
+      - "Looking for include file sys/time.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Fkj7qa"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Fkj7qa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_SYS_TIME_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Fkj7qa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_666bb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_666bb.dir/build.make CMakeFiles/cmTC_666bb.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Fkj7qa'
+        Building C object CMakeFiles/cmTC_666bb.dir/JAS_HAVE_SYS_TIME_H.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_666bb.dir/JAS_HAVE_SYS_TIME_H.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Fkj7qa/JAS_HAVE_SYS_TIME_H.c
+        Linking C executable cmTC_666bb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_666bb.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_666bb.dir/JAS_HAVE_SYS_TIME_H.c.o -o cmTC_666bb 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-Fkj7qa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:450 (check_include_files)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VOzCa9"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VOzCa9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VOzCa9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_12206/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_12206.dir/build.make CMakeFiles/cmTC_12206.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VOzCa9'
+        Building C object CMakeFiles/cmTC_12206.dir/JAS_HAVE_SYS_TYPES_H.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_12206.dir/JAS_HAVE_SYS_TYPES_H.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VOzCa9/JAS_HAVE_SYS_TYPES_H.c
+        Linking C executable cmTC_12206
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12206.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_12206.dir/JAS_HAVE_SYS_TYPES_H.c.o -o cmTC_12206 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VOzCa9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:250 (check_include_file)"
+      - "CMakeLists.txt:452 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CRDVBd"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CRDVBd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CRDVBd'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_99cb6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_99cb6.dir/build.make CMakeFiles/cmTC_99cb6.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CRDVBd'
+        Building C object CMakeFiles/cmTC_99cb6.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_99cb6.dir/CheckIncludeFile.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CRDVBd/CheckIncludeFile.c
+        Linking C executable cmTC_99cb6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99cb6.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_99cb6.dir/CheckIncludeFile.c.o -o cmTC_99cb6 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CRDVBd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "CMakeLists.txt:452 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-175nSm"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-175nSm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-175nSm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5aab2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5aab2.dir/build.make CMakeFiles/cmTC_5aab2.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-175nSm'
+        Building C object CMakeFiles/cmTC_5aab2.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_5aab2.dir/CheckIncludeFile.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-175nSm/CheckIncludeFile.c
+        Linking C executable cmTC_5aab2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5aab2.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_5aab2.dir/CheckIncludeFile.c.o -o cmTC_5aab2 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-175nSm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "CMakeLists.txt:452 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3BNaog"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3BNaog"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3BNaog'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c4359/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c4359.dir/build.make CMakeFiles/cmTC_c4359.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3BNaog'
+        Building C object CMakeFiles/cmTC_c4359.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_c4359.dir/CheckIncludeFile.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3BNaog/CheckIncludeFile.c
+        Linking C executable cmTC_c4359
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4359.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_c4359.dir/CheckIncludeFile.c.o -o cmTC_c4359 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3BNaog'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:452 (check_type_size)"
+    checks:
+      - "Check size of max_align_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l2TwPy"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l2TwPy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_MAX_ALIGN_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l2TwPy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_29047/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_29047.dir/build.make CMakeFiles/cmTC_29047.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l2TwPy'
+        Building C object CMakeFiles/cmTC_29047.dir/MAX_ALIGN_T.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_29047.dir/MAX_ALIGN_T.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l2TwPy/MAX_ALIGN_T.c
+        Linking C executable cmTC_29047
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29047.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_29047.dir/MAX_ALIGN_T.c.o -o cmTC_29047 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l2TwPy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:460 (jas_check_type)"
+    checks:
+      - "Check size of char"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l5RcRL"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l5RcRL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l5RcRL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77336/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_77336.dir/build.make CMakeFiles/cmTC_77336.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l5RcRL'
+        Building C object CMakeFiles/cmTC_77336.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_77336.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l5RcRL/jas_check_type_name_result.c
+        Linking C executable cmTC_77336
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77336.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_77336.dir/jas_check_type_name_result.c.o -o cmTC_77336 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-l5RcRL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:463 (jas_check_type)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-X0pAxN"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-X0pAxN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-X0pAxN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eb6af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eb6af.dir/build.make CMakeFiles/cmTC_eb6af.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-X0pAxN'
+        Building C object CMakeFiles/cmTC_eb6af.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_eb6af.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-X0pAxN/jas_check_type_name_result.c
+        Linking C executable cmTC_eb6af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb6af.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_eb6af.dir/jas_check_type_name_result.c.o -o cmTC_eb6af 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-X0pAxN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:466 (jas_check_type)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JW0eFo"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JW0eFo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JW0eFo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1d6a5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1d6a5.dir/build.make CMakeFiles/cmTC_1d6a5.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JW0eFo'
+        Building C object CMakeFiles/cmTC_1d6a5.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_1d6a5.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JW0eFo/jas_check_type_name_result.c
+        Linking C executable cmTC_1d6a5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d6a5.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_1d6a5.dir/jas_check_type_name_result.c.o -o cmTC_1d6a5 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-JW0eFo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:469 (jas_check_type)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-aWffUU"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-aWffUU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-aWffUU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9bf83/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9bf83.dir/build.make CMakeFiles/cmTC_9bf83.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-aWffUU'
+        Building C object CMakeFiles/cmTC_9bf83.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_9bf83.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-aWffUU/jas_check_type_name_result.c
+        Linking C executable cmTC_9bf83
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bf83.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_9bf83.dir/jas_check_type_name_result.c.o -o cmTC_9bf83 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-aWffUU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:472 (jas_check_type)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6RHCqc"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6RHCqc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6RHCqc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_39de6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_39de6.dir/build.make CMakeFiles/cmTC_39de6.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6RHCqc'
+        Building C object CMakeFiles/cmTC_39de6.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_39de6.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6RHCqc/jas_check_type_name_result.c
+        Linking C executable cmTC_39de6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39de6.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_39de6.dir/jas_check_type_name_result.c.o -o cmTC_39de6 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6RHCqc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:475 (jas_check_type)"
+    checks:
+      - "Check size of ssize_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HmYTTL"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HmYTTL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HmYTTL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e32b4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e32b4.dir/build.make CMakeFiles/cmTC_e32b4.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HmYTTL'
+        Building C object CMakeFiles/cmTC_e32b4.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_e32b4.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HmYTTL/jas_check_type_name_result.c
+        Linking C executable cmTC_e32b4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e32b4.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_e32b4.dir/jas_check_type_name_result.c.o -o cmTC_e32b4 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HmYTTL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:481 (jas_check_type)"
+    checks:
+      - "Check size of int_fast32_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6VJxI1"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6VJxI1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6VJxI1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d945d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d945d.dir/build.make CMakeFiles/cmTC_d945d.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6VJxI1'
+        Building C object CMakeFiles/cmTC_d945d.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_d945d.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6VJxI1/jas_check_type_name_result.c
+        Linking C executable cmTC_d945d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d945d.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_d945d.dir/jas_check_type_name_result.c.o -o cmTC_d945d 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-6VJxI1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:485 (jas_check_type)"
+    checks:
+      - "Check size of int_least32_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zhCEqs"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zhCEqs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zhCEqs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3eeeb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3eeeb.dir/build.make CMakeFiles/cmTC_3eeeb.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zhCEqs'
+        Building C object CMakeFiles/cmTC_3eeeb.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_3eeeb.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zhCEqs/jas_check_type_name_result.c
+        Linking C executable cmTC_3eeeb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3eeeb.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_3eeeb.dir/jas_check_type_name_result.c.o -o cmTC_3eeeb 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zhCEqs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:489 (jas_check_type)"
+    checks:
+      - "Check size of int_fast64_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-PE6qpS"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-PE6qpS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-PE6qpS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1cf4b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1cf4b.dir/build.make CMakeFiles/cmTC_1cf4b.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-PE6qpS'
+        Building C object CMakeFiles/cmTC_1cf4b.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_1cf4b.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-PE6qpS/jas_check_type_name_result.c
+        Linking C executable cmTC_1cf4b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cf4b.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_1cf4b.dir/jas_check_type_name_result.c.o -o cmTC_1cf4b 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-PE6qpS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:493 (jas_check_type)"
+    checks:
+      - "Check size of int_least64_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mIe10N"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mIe10N"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mIe10N'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0ddf6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0ddf6.dir/build.make CMakeFiles/cmTC_0ddf6.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mIe10N'
+        Building C object CMakeFiles/cmTC_0ddf6.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_0ddf6.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mIe10N/jas_check_type_name_result.c
+        Linking C executable cmTC_0ddf6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ddf6.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_0ddf6.dir/jas_check_type_name_result.c.o -o cmTC_0ddf6 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-mIe10N'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:497 (jas_check_type)"
+    checks:
+      - "Check size of __int128_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VK81N3"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VK81N3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VK81N3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_34f0c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_34f0c.dir/build.make CMakeFiles/cmTC_34f0c.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VK81N3'
+        Building C object CMakeFiles/cmTC_34f0c.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_34f0c.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VK81N3/jas_check_type_name_result.c
+        Linking C executable cmTC_34f0c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34f0c.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_34f0c.dir/jas_check_type_name_result.c.o -o cmTC_34f0c 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-VK81N3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:525 (check_function_exists)"
+    checks:
+      - "Looking for nanosleep"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-XU0GWz"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-XU0GWz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_NANOSLEEP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-XU0GWz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_98efe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_98efe.dir/build.make CMakeFiles/cmTC_98efe.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-XU0GWz'
+        Building C object CMakeFiles/cmTC_98efe.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=nanosleep -std=gnu11 -fPIE -o CMakeFiles/cmTC_98efe.dir/CheckFunctionExists.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-XU0GWz/CheckFunctionExists.c
+        Linking C executable cmTC_98efe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98efe.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=nanosleep CMakeFiles/cmTC_98efe.dir/CheckFunctionExists.c.o -o cmTC_98efe 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-XU0GWz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:526 (check_function_exists)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zKMcFZ"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zKMcFZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zKMcFZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bfc53/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bfc53.dir/build.make CMakeFiles/cmTC_bfc53.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zKMcFZ'
+        Building C object CMakeFiles/cmTC_bfc53.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=gettimeofday -std=gnu11 -fPIE -o CMakeFiles/cmTC_bfc53.dir/CheckFunctionExists.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zKMcFZ/CheckFunctionExists.c
+        Linking C executable cmTC_bfc53
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfc53.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=gettimeofday CMakeFiles/cmTC_bfc53.dir/CheckFunctionExists.c.o -o cmTC_bfc53 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-zKMcFZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:527 (check_function_exists)"
+    checks:
+      - "Looking for getrusage"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-8gu6mt"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-8gu6mt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_GETRUSAGE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-8gu6mt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9576f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9576f.dir/build.make CMakeFiles/cmTC_9576f.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-8gu6mt'
+        Building C object CMakeFiles/cmTC_9576f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=getrusage -std=gnu11 -fPIE -o CMakeFiles/cmTC_9576f.dir/CheckFunctionExists.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-8gu6mt/CheckFunctionExists.c
+        Linking C executable cmTC_9576f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9576f.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=getrusage CMakeFiles/cmTC_9576f.dir/CheckFunctionExists.c.o -o cmTC_9576f 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-8gu6mt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:528 (check_function_exists)"
+    checks:
+      - "Looking for mkostemp"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nki6qu"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nki6qu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_MKOSTEMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nki6qu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aa9f4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aa9f4.dir/build.make CMakeFiles/cmTC_aa9f4.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nki6qu'
+        Building C object CMakeFiles/cmTC_aa9f4.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=mkostemp -std=gnu11 -fPIE -o CMakeFiles/cmTC_aa9f4.dir/CheckFunctionExists.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nki6qu/CheckFunctionExists.c
+        Linking C executable cmTC_aa9f4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa9f4.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=mkostemp CMakeFiles/cmTC_aa9f4.dir/CheckFunctionExists.c.o -o cmTC_aa9f4 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nki6qu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:532 (check_function_exists)"
+    checks:
+      - "Looking for snprintf"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ZZNsNQ"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ZZNsNQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_SNPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ZZNsNQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dbd6b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dbd6b.dir/build.make CMakeFiles/cmTC_dbd6b.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ZZNsNQ'
+        Building C object CMakeFiles/cmTC_dbd6b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror -DCHECK_FUNCTION_EXISTS=snprintf -std=gnu11 -fPIE -o CMakeFiles/cmTC_dbd6b.dir/CheckFunctionExists.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ZZNsNQ/CheckFunctionExists.c
+        <command-line>: error: conflicting types for built-in function ‘snprintf’; expected ‘int(char *, long unsigned int,  const char *, ...)’ [-Werror=builtin-declaration-mismatch]
+        /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ZZNsNQ/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ZZNsNQ/CheckFunctionExists.c:1:1: note: ‘snprintf’ is declared in header ‘<stdio.h>’
+          +++ |+#include <stdio.h>
+            1 | #ifdef CHECK_FUNCTION_EXISTS
+        cc1: all warnings being treated as errors
+        gmake[1]: *** [CMakeFiles/cmTC_dbd6b.dir/build.make:78: CMakeFiles/cmTC_dbd6b.dir/CheckFunctionExists.c.o] Error 1
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ZZNsNQ'
+        gmake: *** [Makefile:127: cmTC_dbd6b/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:591 (check_c_source_compiles)"
+    checks:
+      - "Performing Test JAS_TRY_COMPILE_C11_THREADS"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-KdSi1O"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-KdSi1O"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_TRY_COMPILE_C11_THREADS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-KdSi1O'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f6ce/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8f6ce.dir/build.make CMakeFiles/cmTC_8f6ce.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-KdSi1O'
+        Building C object CMakeFiles/cmTC_8f6ce.dir/src.c.o
+        /usr/bin/cc -DJAS_TRY_COMPILE_C11_THREADS  -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_8f6ce.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-KdSi1O/src.c
+        Linking C executable cmTC_8f6ce
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f6ce.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_8f6ce.dir/src.c.o -o cmTC_8f6ce 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-KdSi1O'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:600 (check_c_source_compiles)"
+    checks:
+      - "Performing Test JAS_TRY_COMPILE_THREAD_LOCAL"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-rPiQP8"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-rPiQP8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_TRY_COMPILE_THREAD_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-rPiQP8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7dcde/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7dcde.dir/build.make CMakeFiles/cmTC_7dcde.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-rPiQP8'
+        Building C object CMakeFiles/cmTC_7dcde.dir/src.c.o
+        /usr/bin/cc -DJAS_TRY_COMPILE_THREAD_LOCAL  -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_7dcde.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-rPiQP8/src.c
+        Linking C executable cmTC_7dcde
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7dcde.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_7dcde.dir/src.c.o -o cmTC_7dcde 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-rPiQP8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:608 (check_include_files)"
+    checks:
+      - "Looking for include file pthread.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-sSYbXa"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-sSYbXa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_PTHREAD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-sSYbXa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a33c3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a33c3.dir/build.make CMakeFiles/cmTC_a33c3.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-sSYbXa'
+        Building C object CMakeFiles/cmTC_a33c3.dir/JAS_HAVE_PTHREAD_H.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_a33c3.dir/JAS_HAVE_PTHREAD_H.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-sSYbXa/JAS_HAVE_PTHREAD_H.c
+        Linking C executable cmTC_a33c3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a33c3.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_a33c3.dir/JAS_HAVE_PTHREAD_H.c.o -o cmTC_a33c3 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-sSYbXa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:620 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-FFfbSl"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-FFfbSl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-FFfbSl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_39060/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_39060.dir/build.make CMakeFiles/cmTC_39060.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-FFfbSl'
+        Building C object CMakeFiles/cmTC_39060.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_39060.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-FFfbSl/src.c
+        Linking C executable cmTC_39060
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39060.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_39060.dir/src.c.o -o cmTC_39060 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-FFfbSl'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:746 (check_c_source_compiles)"
+    checks:
+      - "Performing Test JAS_HAVE_JPEGLIB_H"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CfepD6"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CfepD6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_JPEGLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CfepD6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55f62/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_55f62.dir/build.make CMakeFiles/cmTC_55f62.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CfepD6'
+        Building C object CMakeFiles/cmTC_55f62.dir/src.c.o
+        /usr/bin/cc -DJAS_HAVE_JPEGLIB_H  -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_55f62.dir/src.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CfepD6/src.c
+        Linking C executable cmTC_55f62
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55f62.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_55f62.dir/src.c.o -o cmTC_55f62 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-CfepD6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:775 (check_include_files)"
+    checks:
+      - "Looking for include file libheif/heif.h"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xZG1lD"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xZG1lD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "JAS_HAVE_HEIF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xZG1lD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6a2fc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6a2fc.dir/build.make CMakeFiles/cmTC_6a2fc.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xZG1lD'
+        Building C object CMakeFiles/cmTC_6a2fc.dir/JAS_HAVE_HEIF_H.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_6a2fc.dir/JAS_HAVE_HEIF_H.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xZG1lD/JAS_HAVE_HEIF_H.c
+        Linking C executable cmTC_6a2fc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a2fc.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_6a2fc.dir/JAS_HAVE_HEIF_H.c.o -o cmTC_6a2fc 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xZG1lD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake-3.28/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
+      - "/usr/share/cmake-3.28/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "src/libjasper/CMakeLists.txt:212 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xi5dlv"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xi5dlv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xi5dlv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aca37/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aca37.dir/build.make CMakeFiles/cmTC_aca37.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xi5dlv'
+        Building CXX object CMakeFiles/cmTC_aca37.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -std=gnu++11 -fPIE   -fvisibility=hidden -o CMakeFiles/cmTC_aca37.dir/src.cxx.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xi5dlv/src.cxx
+        Linking CXX executable cmTC_aca37
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aca37.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_aca37.dir/src.cxx.o -o cmTC_aca37 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-xi5dlv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/usr/share/cmake-3.28/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
+      - "/usr/share/cmake-3.28/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "src/libjasper/CMakeLists.txt:212 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-hztYIK"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-hztYIK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-hztYIK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_841c4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_841c4.dir/build.make CMakeFiles/cmTC_841c4.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-hztYIK'
+        Building CXX object CMakeFiles/cmTC_841c4.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -std=gnu++11 -fPIE   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_841c4.dir/src.cxx.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-hztYIK/src.cxx
+        Linking CXX executable cmTC_841c4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_841c4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_841c4.dir/src.cxx.o -o cmTC_841c4 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-hztYIK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/usr/share/cmake-3.28/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "src/libjasper/CMakeLists.txt:212 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f78e6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f78e6.dir/build.make CMakeFiles/cmTC_f78e6.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe'
+        Building CXX object CMakeFiles/cmTC_f78e6.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -std=gnu++11 -fPIE -o CMakeFiles/cmTC_f78e6.dir/src.cxx.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe/src.cxx
+        /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe/src.cxx: In function ‘int main()’:
+        /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+            2 |     int main() { return somefunc();}
+              |                         ~~~~~~~~^~
+        /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe/src.cxx:1:37: note: declared here
+            1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+              |                                     ^~~~~~~~
+        Linking CXX executable cmTC_f78e6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f78e6.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_f78e6.dir/src.cxx.o -o cmTC_f78e6 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HokBCe'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "build/cmake/modules/JasGetStdcVersion.cmake:13 (try_run)"
+      - "CMakeLists.txt:437 (jas_get_stdc_version)"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "print_stdc_compile_status"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a93e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5a93e.dir/build.make CMakeFiles/cmTC_5a93e.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_5a93e.dir/print_stdc.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_5a93e.dir/print_stdc.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/src/print_stdc.c
+        Linking C executable cmTC_5a93e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a93e.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_5a93e.dir/print_stdc.c.o -o cmTC_5a93e 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/build/cmake/src/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "print_stdc_run_status"
+      cached: true
+      stdout: |
+        201112L
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:460 (jas_check_type)"
+    checks:
+      - "Check size of char"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jQyFs6"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jQyFs6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jQyFs6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1101f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1101f.dir/build.make CMakeFiles/cmTC_1101f.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jQyFs6'
+        Building C object CMakeFiles/cmTC_1101f.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_1101f.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jQyFs6/jas_check_type_name_result.c
+        Linking C executable cmTC_1101f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1101f.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_1101f.dir/jas_check_type_name_result.c.o -o cmTC_1101f 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jQyFs6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:463 (jas_check_type)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ppsGUc"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ppsGUc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ppsGUc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6f3c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b6f3c.dir/build.make CMakeFiles/cmTC_b6f3c.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ppsGUc'
+        Building C object CMakeFiles/cmTC_b6f3c.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_b6f3c.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ppsGUc/jas_check_type_name_result.c
+        Linking C executable cmTC_b6f3c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6f3c.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_b6f3c.dir/jas_check_type_name_result.c.o -o cmTC_b6f3c 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-ppsGUc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:466 (jas_check_type)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0TWMNg"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0TWMNg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0TWMNg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae21b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae21b.dir/build.make CMakeFiles/cmTC_ae21b.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0TWMNg'
+        Building C object CMakeFiles/cmTC_ae21b.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_ae21b.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0TWMNg/jas_check_type_name_result.c
+        Linking C executable cmTC_ae21b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae21b.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_ae21b.dir/jas_check_type_name_result.c.o -o cmTC_ae21b 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0TWMNg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:469 (jas_check_type)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HTR2Fh"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HTR2Fh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HTR2Fh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_45062/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_45062.dir/build.make CMakeFiles/cmTC_45062.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HTR2Fh'
+        Building C object CMakeFiles/cmTC_45062.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_45062.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HTR2Fh/jas_check_type_name_result.c
+        Linking C executable cmTC_45062
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45062.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_45062.dir/jas_check_type_name_result.c.o -o cmTC_45062 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-HTR2Fh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:472 (jas_check_type)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3gBaui"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3gBaui"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3gBaui'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1ecd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a1ecd.dir/build.make CMakeFiles/cmTC_a1ecd.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3gBaui'
+        Building C object CMakeFiles/cmTC_a1ecd.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_a1ecd.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3gBaui/jas_check_type_name_result.c
+        Linking C executable cmTC_a1ecd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1ecd.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_a1ecd.dir/jas_check_type_name_result.c.o -o cmTC_a1ecd 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-3gBaui'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:475 (jas_check_type)"
+    checks:
+      - "Check size of ssize_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-buAiZ0"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-buAiZ0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-buAiZ0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_214b9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_214b9.dir/build.make CMakeFiles/cmTC_214b9.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-buAiZ0'
+        Building C object CMakeFiles/cmTC_214b9.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_214b9.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-buAiZ0/jas_check_type_name_result.c
+        Linking C executable cmTC_214b9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_214b9.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_214b9.dir/jas_check_type_name_result.c.o -o cmTC_214b9 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-buAiZ0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:481 (jas_check_type)"
+    checks:
+      - "Check size of int_fast32_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nZp7CD"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nZp7CD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nZp7CD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5cfb5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5cfb5.dir/build.make CMakeFiles/cmTC_5cfb5.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nZp7CD'
+        Building C object CMakeFiles/cmTC_5cfb5.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_5cfb5.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nZp7CD/jas_check_type_name_result.c
+        Linking C executable cmTC_5cfb5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cfb5.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_5cfb5.dir/jas_check_type_name_result.c.o -o cmTC_5cfb5 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-nZp7CD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:485 (jas_check_type)"
+    checks:
+      - "Check size of int_least32_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-WNceR9"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-WNceR9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-WNceR9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e87cd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e87cd.dir/build.make CMakeFiles/cmTC_e87cd.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-WNceR9'
+        Building C object CMakeFiles/cmTC_e87cd.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_e87cd.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-WNceR9/jas_check_type_name_result.c
+        Linking C executable cmTC_e87cd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e87cd.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_e87cd.dir/jas_check_type_name_result.c.o -o cmTC_e87cd 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-WNceR9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:489 (jas_check_type)"
+    checks:
+      - "Check size of int_fast64_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0WVrnl"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0WVrnl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0WVrnl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f962f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f962f.dir/build.make CMakeFiles/cmTC_f962f.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0WVrnl'
+        Building C object CMakeFiles/cmTC_f962f.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_f962f.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0WVrnl/jas_check_type_name_result.c
+        Linking C executable cmTC_f962f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f962f.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_f962f.dir/jas_check_type_name_result.c.o -o cmTC_f962f 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-0WVrnl'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:493 (jas_check_type)"
+    checks:
+      - "Check size of int_least64_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-qHyhlN"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-qHyhlN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-qHyhlN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ba20c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ba20c.dir/build.make CMakeFiles/cmTC_ba20c.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-qHyhlN'
+        Building C object CMakeFiles/cmTC_ba20c.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_ba20c.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-qHyhlN/jas_check_type_name_result.c
+        Linking C executable cmTC_ba20c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba20c.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_ba20c.dir/jas_check_type_name_result.c.o -o cmTC_ba20c 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-qHyhlN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "build/cmake/modules/JasCheckType.cmake:22 (check_type_size)"
+      - "CMakeLists.txt:497 (jas_check_type)"
+    checks:
+      - "Check size of __int128_t"
+    directories:
+      source: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jjN02c"
+      binary: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jjN02c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pedantic -pedantic-errors -Werror"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/build/cmake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_jas_check_type_name_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jjN02c'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0b999/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0b999.dir/build.make CMakeFiles/cmTC_0b999.dir/build
+        gmake[1]: Entering directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jjN02c'
+        Building C object CMakeFiles/cmTC_0b999.dir/jas_check_type_name_result.c.o
+        /usr/bin/cc   -pedantic -pedantic-errors -Werror  -std=gnu11 -fPIE -o CMakeFiles/cmTC_0b999.dir/jas_check_type_name_result.c.o -c /home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jjN02c/jas_check_type_name_result.c
+        Linking C executable cmTC_0b999
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b999.dir/link.txt --verbose=1
+        /usr/bin/cc  -pedantic -pedantic-errors -Werror  CMakeFiles/cmTC_0b999.dir/jas_check_type_name_result.c.o -o cmTC_0b999 
+        gmake[1]: Leaving directory '/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/CMakeFiles/CMakeScratch/TryCompile-jjN02c'
+        
+      exitCode: 0
+...

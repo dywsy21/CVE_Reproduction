@@ -1,0 +1,13 @@
+prefix=/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: JasPer
+Description: Image Processing/Coding Tool Kit with JPEG-2000 Support
+Version: 4.2.4
+
+Libs: -L${libdir} -ljasper
+Requires.private: libjpeg libheif
+Cflags: -I${includedir}/jasper -I${includedir}
+Cflags.private: -DLIBJASPER_STATIC_DEFINE

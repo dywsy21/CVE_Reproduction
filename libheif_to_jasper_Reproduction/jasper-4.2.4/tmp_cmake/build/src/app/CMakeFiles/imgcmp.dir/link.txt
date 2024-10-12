@@ -1,0 +1,1 @@
+/usr/bin/cc  -pedantic -pedantic-errors -Werror -O3  CMakeFiles/imgcmp.dir/imgcmp.c.o -o imgcmp  -Wl,-rpath,/home/wsy/CVE_Reproduction/libheif_to_jasper_Reproduction/jasper-4.2.4/tmp_cmake/build/src/libjasper:/usr/local/lib: ../libjasper/libjasper.so.7.0.0 /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/local/lib/libheif.so -lm /usr/lib/x86_64-linux-gnu/libpthread.a 
